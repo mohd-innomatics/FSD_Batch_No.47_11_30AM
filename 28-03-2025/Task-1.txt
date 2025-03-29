@@ -1,0 +1,9 @@
+Favorite Books or Movies List
+Description: Create a list of your favorite books or movies with images and descriptions.
+Features:
+	• Use <h1> for the main title (e.g., "My Favorite Books").
+	• Use <h2> for individual books/movies.
+	• Use <p> to describe each book/movie.
+	• Use <img> for book/movie covers.
+	• Use <a> to link to more information.
+Use <hr> to separate entries.
