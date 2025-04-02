@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Data</title>
+</head>
+<body bgcolor="red">
+    <h1>Employee Table</h1>
+<!-- Emmet to create table heading -->
+ <!-- Emmet: table>thead>tr>th*4 -->
+    <table bgcolor="yellow" border="2" cellspacing="5" cellpadding="7" width="90%" align="center" >
+        <caption><b>Employee info</b></caption>
+        <thead >
+            <tr >
+                <th>EmpId</th>
+                <th>Ename</th>
+                <th>Edepart.</th>
+                <th>Esalary</th>
+            </tr>
+        </thead>
+
+<!-- Emmet to create tbody -->
+ <!-- Emmet: tbody>tr*4>td*4 -->
+        <tbody>
+            <tr>
+                <td>101</td>
+                <td>Raju</td>
+                <td rowspan="3">Sales</td>
+                <td>₹30000</td>
+            </tr>
+            <tr>
+                <td>101</td>
+                <td>Raju</td>
+                <!-- <td>Sales</td> -->
+                <td>₹30000</td>
+            </tr>
+            <tr>
+                <td>101</td>
+                <td>Raju</td>
+                <!-- <td>Sales</td> -->
+                <td>₹30000</td>
+            </tr>
+            <tr>
+                <td colspan="3">not there</td>
+                
+                <td>₹60000</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
