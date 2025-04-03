@@ -1,0 +1,30 @@
+Task 1: Create a Web Page Using All Tags
+Instructions:
+	1. Create an index.html file and structure it as follows:
+
+1️⃣ Title & Headings
+	• Set the title: "My First HTML Page".
+	• Add headings:
+		○ <h1>: "Welcome to My Web Page"
+		○ <h2>: "About Me"
+		○ <h3>: "My Interests"
+
+2️⃣ Introduction
+	• Write a paragraph <p> about yourself.
+	• Highlight a word using <mark>.
+	• Add a horizontal line <hr>.
+
+3️⃣ Image & Link
+	• Add an image <img src="your-image.jpg" alt="My Picture">.
+	• Create a link <a href="https://www.google.com">Visit Google</a>.
+	• Add a line break <br>.
+
+4️⃣ Lists
+	• Ordered List (<ol>) → Your 3 hobbies.
+	• Unordered List (<ul>) → Your favorite foods.
+	• Definition List (<dl>) → Explain 3 HTML tags (<dt> for the term, <dd> for the description).
+
+5️⃣ Preformatted Text
+	• Use <pre> to show a short poem or a code snippet.
+
+
