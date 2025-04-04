@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form tag in html</title>
+</head>
+<body>
+    <h1 align="center">Learning Form tag in HTML</h1>
+    <hr size="5" color="darkblue">
+
+    <!-- creating login form -->
+
+    <form action="" method="get">
+        <fieldset>
+            <!-- Adding caption -->
+            <legend align="center"><h2>Facebook</h2></legend>
+
+            <!-- label is used to display the text -->
+            <label for="user">Username</label>
+            <input type="text" id="user" placeholder="username">
+    
+            <!-- line break -->
+             <br><br>
+            <label for="pass">Password</label>
+            <input type="password" id="pass" required>
+    
+            <!-- line break -->
+            <br><br>
+    
+            <!-- <button>Submit</button> -->
+            <input type="button" value="Submit">
+        </fieldset>
+
+
+        <!-- Drowpdown -->
+        
+        <label for="course">Course</label>
+        <select name="Full Stack" id="fsd">
+            <optgroup label="Frontend">
+                <option value="">HTML</option>
+                <option value="">CSS</option>
+            </optgroup>
+
+            <optgroup label="Backend">
+                <option value="">JavaScript</option>
+                <option value="" selected>Node.js</option>
+                <option value="">Express.js</option>
+            </optgroup>
+
+
+        </select>
+<br><br>
+        <!-- textarea -->
+        <label for="feedback">Feedback</label><br>
+        <textarea name="feedback" id="feedback" rows="5" cols="40"></textarea>
+
+        <!-- checkbox button -->
+        <fieldset style="width: 250px;">
+            <legend>Choose your Interests:</legend>
+            <input type="checkbox" id="coding" name="interest" value="coding">
+            <label for="coding">Coding</label>
+
+            <input type="checkbox" id="music" name="interest" value="music">
+            <label for="music">Music</label>
+        </fieldset>
+
+        <!-- radio buttons -->
+        
+        <fieldset style="width: 250px;">
+            <legend>Choose your gender:</legend>
+            <input type="radio" id="male" name="male" value="male">
+            <label for="male">Male</label>
+
+            <input type="radio" id="female" name="female" value="female">
+            <label for="female">Female</label>
+        </fieldset>
+
+       
+    </form>
+</body>
+</html>
