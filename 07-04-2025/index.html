@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form tag</title>
+</head>
+<body>
+    
+    <form>
+        <!-- Drop down -->
+         <h2>Drop down</h2>
+
+         <label for="coding">Select Your Skills</label>
+         <select name="" id="coding">
+            <!-- by default it will display "Select Skills" -->
+            <option value="select" disabled selected>Select Skills</option>
+
+            <!-- group the relvent skills -->
+             <!-- Group-1 -->
+            <optgroup label="programming">
+                <option value="java">Java</option>
+                <option value="python">Python</option>
+                <option value="C++">C++</option>
+
+            </optgroup>
+
+                <!-- group the relvent skills -->
+                 <!-- group-2  -->
+                <optgroup label="Frontend">
+                    <option value="HTML5">HTML5</option>
+                    <option value="CSS3">CSS3</option>
+                    <option value="JavaScript">JavaScript</option>
+    
+                </optgroup>
+            
+         </select>
+
+
+         <h2>Radio Buttons</h2>
+         <label for="gender">Select Gender</label>
+
+         <!-- Note: keep name attribute value same in both the input field -->
+         <input type="radio" id="gender" name="gender">Male
+         <input type="radio" id="gender" name="gender">Female
+
+         <h2>Select your Skills</h2>
+         <label for="skills">Select your skills</label>
+         <input type="checkbox" id="skills">Frontend
+         <input type="checkbox" name="skills">Backend
+         <input type="checkbox" name="skills">Databse
+         
+    </form>
+</body>
+</html>
