@@ -1,0 +1,36 @@
+/* universal selector */
+*{
+    background-color: black;
+}
+
+/* Element Selector */
+div{
+    /* border-width: 10px;
+    border-style: solid;
+    border-color: green; */
+
+    /* shorthand property.. */
+    /* border: width style color */
+    border: 2px solid red;
+    border-radius: 50%;
+
+    height: 200px;
+    width: 200px;
+    background-color: pink;
+
+    margin-bottom: 20px;
+
+
+    display: inline-block;
+}
+
+/* using id selector */
+#second{
+    background-color: yellow;
+}
+
+/* using class selector */
+
+.item{
+    background-color: blueviolet;
+}
