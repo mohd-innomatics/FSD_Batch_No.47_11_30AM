@@ -1,36 +1,26 @@
-/* universal selector */
-*{
+/* Universal Selector */
+* {
     background-color: black;
 }
 
 /* Element Selector */
-div{
-    /* border-width: 10px;
-    border-style: solid;
-    border-color: green; */
-
-    /* shorthand property.. */
-    /* border: width style color */
+div {
     border: 2px solid red;
-    border-radius: 50%;
-
+    border-radius: 100%; /* This makes the corners fully rounded */
     height: 200px;
     width: 200px;
     background-color: pink;
-
     margin-bottom: 20px;
 
-
-    display: inline-block;
+    display: block; /* Use block to ensure proper shape rendering */
 }
 
-/* using id selector */
-#second{
+/* Using ID selector */
+#second {
     background-color: yellow;
 }
 
-/* using class selector */
-
-.item{
+/* Using class selector */
+.item {
     background-color: blueviolet;
 }
