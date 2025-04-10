@@ -1,0 +1,22 @@
+• How do you change the font ✍️ of a webpage using CSS?
+• What is the difference between font-family 🔤 and font-size 🆎?
+• Can you use multiple fonts 🅰️ in font-family? Why do we list more than one?
+• What is the shorthand 🧾 for setting all font properties in one line?
+• Which property is used to make text bold 💪 or italic ✍️?
+• What are the three types of CSS 🎨?
+• Which type of CSS is written inside 🖋️ the <style> tag?
+• Which CSS type is best for reusing styles ♻️ across multiple pages?
+• What is inline CSS 🧩? Give one example.
+• What is the main difference between internal ⚖️ and external CSS 🌐?
+• What is the use of the <link> tag 🔗 in HTML?
+1️⃣ Where should you place the <link> tag in an HTML document 📍?
+2️⃣ What are the required attributes 📄 in the <link> tag to attach a CSS file?
+• What are the parts of the CSS box model 📦?
+• What is the difference between padding 📏 and margin 📐?
+• How does border 🧱 fit into the box model?
+• How do you add a solid black border ⬛ around an element?
+• What is the shorthand 📝 way to define border width, style, and color?
+• Write a single line CSS rule to give an element a red 🟥, dashed, 2px border.
+• If an element has both inline ⚔️ and external CSS 🌐, which one will apply?
+• What will happen if two rules apply to the same element: one from a class 📘 and one from an ID 📗?
+• Which has higher priority 🏆: tag selector, class selector, or ID selector?

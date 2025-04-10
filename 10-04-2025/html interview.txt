@@ -1,0 +1,23 @@
+• What is the DOCTYPE 📜 in HTML? Why is it important ❓
+• What is the difference between HTML 🌐 and CSS 🎨?
+• What is an HTML element 🧱?
+• What are void (self-closing) elements 🚪❌? Give examples 🧾.
+• What is the purpose of the <head> 🧠 and <body> 💪 sections in HTML?
+• What is the difference between <div> 🧩 and <span> 📏?
+• What is the purpose of the alt attribute ♿ in the <img> 🖼️ tag?
+• How do you create a hyperlink 🔗 in HTML 🌐?
+• How many types 🔢 of headings 🗂️ are there in HTML?
+• What are semantic elements 🏷️ in HTML? Give examples 📚.
+• What is the difference between <strong> 💪 and <b> 🅱️?
+• What is the use of the <meta> 🧠 tag in HTML 📄?
+• What is the difference between id 🆔 and class 🏷️ attributes?
+• How do you create a table 📊 in HTML 🧱?
+• What are the different types of lists 📋 in HTML 🔢•?
+• How can you make a form 📝 in HTML? Name some input types 📥.
+• What is the use of action 📤 and method 🔄 attributes in a form 📩?
+• How can you include an external CSS file 🧷 in an HTML document 💅?
+• What is the difference between inline 📏, block 📦, and inline-block 📐 elements?
+• Can a web page have multiple <head> 🧠 or <body> 🧍‍♂️ tags? Why or why not ❌?
+• What is the difference between HTML4 📄 and HTML5 ⚡?
+• What are new input types 🆕 introduced in HTML5 ⌨️?
+
