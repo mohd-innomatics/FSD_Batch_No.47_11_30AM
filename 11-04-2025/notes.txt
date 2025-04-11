@@ -1,0 +1,35 @@
+📌 CSS position Properties – Quick Notes
+
+1. static (Default)
+
+	• 👉 Elements follow the normal flow.
+	• ❌ No top/left/bottom/right works.
+
+2. relative
+	• 📍 Element stays in normal flow,
+	• ✅ But you can shift it using top/left/right/bottom.
+
+3. absolute
+	• 🪂 Removed from normal flow.
+	• ⚠️ If no ancestor is positioned, it refers to <html>
+
+4. fixed
+	• 🚀 Stays fixed on the screen — doesn’t move while scrolling.
+	• 🔒 Position based on viewport (screen).
+	• Used for: Sticky headers, floating buttons.
+
+5. sticky
+	• 🧷 Acts like relative first,
+	• 🧲 Then sticks to a position when scrolled.
+	• ✅ Requires a top, left, right, or bottom value.
+
+⚔️ fixed vs sticky – Key Difference
+Feature	fixed 📌	sticky 🧷
+Scroll	Always stays on screen 🖥️	Sticks after scrolling 🧲
+Reference	Viewport (screen)	Scrollable parent/container
+Moves in flow	❌ No (removed)	✅ Yes, initially in flow
+Common use	Navbar, back-to-top button	Section headers in scroll
+
+🔥 Important Notes
+	• sticky must have a top or similar value.
+	• fixed elements do not scroll with the page.
