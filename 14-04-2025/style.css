@@ -1,0 +1,56 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* Container Properties... */
+.container{
+    border:8px solid rgb(50, 74, 197);
+
+    width: 100vw;
+    height: 100vh;
+
+    /* CSS FlexBox */
+    display: flex;
+    /* flex-direction: row(default) | row-reverse | column | column-reverse */
+    /* flex-direction: row; */
+
+    /* flex-wrap: nowrap(default) | wrap | wrap-reverse */
+    /* flex-wrap: wrap; */
+
+
+    /* Shorthand Property */
+    /* flex-flow: flex-direction + flex-wrap */
+
+    /* flex-flow: row wrap; */
+
+    /* justify-content: flex-start(default) | flex-end | center | space-around | space-evenly | space-between */
+    
+    /* justify-content: center; */
+    /* justify-content: center;
+    justify-content: flex-end;
+    justify-content: space-evenly; */
+
+    /* align-items: flex-start(default) | flex-end | center | base-line | stretch */
+    
+    /* align-items: center; */
+    /* align-items: baseline; */
+    align-items: stretch;
+}
+
+.box{
+    background-color: yellow;
+    height: 200px;
+    width: 200px;
+    margin: 5px;
+
+    text-align: center;
+    padding-top: 30px;
+    font-size: 30px;
+    font-weight: bolder;
+    font-style: italic;
+    color:rgb(61, 7, 46);
+
+    border: 5px solid crimson;
+}
+
