@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    line-height: 35px;
+}
+
+header{
+    /* border:2px solid red; */
+    height: 80px;
+    padding: 0 20px;
+    background-color: rgba(0, 0, 0, 0.852);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h2{
+    color:white;
+}
+
+
+
+nav a{
+
+    margin-right: 30px;
+
+    color:white;
+    text-decoration: none;
+
+    /* font-weight: bolder; */
+    font-family: 'Times New Roman', Times, serif;
+    /* background-color: yellow; */
+    padding: 7px;
+    transition: all 0.6s ease-in-out;
+}
+
+nav a:hover{
+    background-color: white;
+    color:black;
+}
+
+
+/* header Section desing end */
+
+/* -----------------Hero Section----------------- */
+
+
+#hero{
+    /* border:2px solid red; */
+    height: 40vh;
+    background-color: rgb(43, 97, 118);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.heroText{
+    display: flex;
+    flex-direction: column;
+    /* border:2px solid red; */
+
+    align-items: center;
+}
+
+.heroText h2{
+    color:white;
+    font-family: "Special Gothic Expanded One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+    letter-spacing: 2px;
+    word-spacing: 7px;
+}
+
+.heroText p{
+    color:white;
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+}
+
+
+
+/* -----------------About Section----------------- */
+
+
+#about{
+    /* border:2px solid red; */
+    padding: 15px 40px;
+}
+
+#about img{
+    width: 150px;
+    /* background-color: yellow; */
+    border-radius: 50%;
+}
+
+#project{
+    height: 40vh;
+    /* border:2px solid red; */
+    padding: 15px 40px;
+}
+
+.card-group{
+    display: flex;
+    /* justify-content: space-around; */
+    gap: 30px 50px;
+    padding:30px;
+    justify-content: center;
+    /* border:5px solid pink; */
+}
+
+.card-group .card{
+    width: 25%;
+    border:2px solid rgb(255, 255, 255);
+    padding: 10px;
+
+    box-shadow: 0 0 10px #000000;
+    border-radius: 5px;
+    line-height: 27px;
+}
