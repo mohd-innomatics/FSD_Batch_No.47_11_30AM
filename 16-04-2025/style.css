@@ -103,9 +103,17 @@ nav a:hover{
 }
 
 #project{
-    height: 40vh;
+    height:fit-content;
     /* border:2px solid red; */
     padding: 15px 40px;
+
+    /* display: flex;
+    flex-wrap: wrap; */
+    /* background-color: green; */
+    
+ 
+  
+    
 }
 
 .card-group{
@@ -114,15 +122,57 @@ nav a:hover{
     gap: 30px 50px;
     padding:30px;
     justify-content: center;
+    flex-wrap: wrap;
+
     /* border:5px solid pink; */
 }
 
 .card-group .card{
     width: 25%;
+    
     border:2px solid rgb(255, 255, 255);
     padding: 10px;
 
     box-shadow: 0 0 10px #000000;
     border-radius: 5px;
     line-height: 27px;
+
+    /* background-color: yellow; */
+
+    max-height: 250px;
+
+    overflow: hidden;
+ 
+    
+}
+
+
+#contact{
+    padding: 15px 40px;
+    /* background-color: yellow; */
+    height: 30vh;
+}
+
+.contact-links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 20px;
+    font-size: 30px;
+    height: 15vh;
+
+    /* border:2px solid black; */
+}
+#footer{
+    background-color: #000000;
+    /* color: aliceblue; */
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+footer p{
+    color: white;
+    font-size: large;
 }
