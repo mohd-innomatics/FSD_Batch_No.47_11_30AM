@@ -1,0 +1,28 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: gray;
+
+    /* CSS Animation  */
+    animation-name: bgcolors;
+    animation-duration: 0.2s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+/* defining rules for the animation */
+
+@keyframes bgcolors{
+    from{
+        background-color: crimson;
+    }
+
+    to{
+        background-color: black;
+    }
+}
