@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bouncing Ball Animation</title>
+
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .container{
+            height: 100vh;
+            width: 100vw;
+            background: linear-gradient(45deg, #ffbf80, #ffff66);
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .ball{
+            width: 150px;
+            height: 150px;
+            
+            position: absolute;
+            z-index: 2;
+            background: linear-gradient(-45deg,crimson,orange);
+            border:5px solid white;
+            box-shadow: 0 0 10px black;
+
+            border-radius: 50%;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+
+            font-size: 30px;
+            color:white;
+
+            /* Applying Animation on Ball */
+
+            animation: ball 5s infinite 0.5s ease-in-out;
+        }
+
+        .shadow{
+            width: 100px;
+            height: 10px;
+            border-radius: 70%;
+            position: absolute;
+            bottom: 140px;
+            background-color: black;
+            animation:shadow 4s infinite 0.3s ease-in-out;
+        }
+
+
+        @keyframes ball{
+            0%,100%{
+                transform: translateY(0);
+            }
+            50%{
+                transform: translateY(-120px);
+            }
+        }
+
+        @keyframes shadow{
+            0%,100%{
+                transform: scale(1);
+                opacity: 0;
+            }
+            50%{
+                transform: scale(0.5);
+                opacity: 0.7;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="ball">Ball</div>
+        <div class="shadow"></div>
+    </div>
+</body>
+</html>
