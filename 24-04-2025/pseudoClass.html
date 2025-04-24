@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Classes</title>
+    <!-- embedded or internal stylesheet -->
+    <style>
+        ul{
+            border: 7px solid crimson;
+            width: 300px;
+            transition: all 0.4s ease-in-out;
+        }
+
+        /* li{
+            display: none;
+            transition: all 0.4s ease-in-out;
+        }
+        li:hover{
+            background-color: yellow;
+        }
+        li:not(hover){
+            background-color: gray;
+        }
+
+        ul:hover li{
+            display: block;
+        } */
+
+        /* li:nth-child(odd){
+            background-color: yellow;
+        } */
+
+        /* 
+            :first-child()
+            :last-child()
+            :nth-child(value)
+                         value: number | even | odd etc.
+
+        */
+
+        a{
+            font-size: 50px;
+            font-weight: bolder;
+
+            color:darkorange;
+        }
+        a:hover{
+            color:crimson;
+        }
+        a:visited{
+            color:green;
+        }
+        a:active{
+            background-color: yellow;
+            color:red;
+        }
+
+        /* pseudo elements  */
+
+        li::selection{
+            background-color: black;
+            color: yellow;
+        }
+
+        p::first-letter{
+            font-size: 50px;
+            font-weight: bolder;
+            color:darkblue;
+        }
+
+        p::first-line{
+            background-color: black;
+            color:white
+        }
+
+
+        #one::before{
+            content: '👋';
+        }
+        #one::after{
+            content:'😪';
+            font-size: 30px;
+        }
+
+        input::placeholder{
+            background-color: yellow;
+            color:red;
+        }
+        input:focus{
+            border:13px solid red;
+            color:white;
+        }
+        
+    </style>
+</head>
+<body>
+    <ul>
+        <li id="one">This is Line-#1</li>
+        <li>This is Line-#2</li>
+        <li>This is Line-#3</li>
+        <li>This is Line-#4</li>
+        <li>This is Line-#5</li>
+        <li>This is Line-#6</li>
+    </ul>
+
+    <input type="text" placeholder="username">
+
+    <a href="#">Click Me</a>
+
+
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel reiciendis cumque voluptatum praesentium sed ipsa rerum maxime incidunt consequuntur doloribus.</p>
+
+
+</body>
+</html>

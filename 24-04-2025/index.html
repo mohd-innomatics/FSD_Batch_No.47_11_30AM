@@ -1,0 +1,66 @@
+<!-- 
+ space    descendant combinator
+ >        Child combinator
+ ~        general siblings
+ +        adjacent combinator
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combinators</title>
+
+    <!-- Embedded or internal CSS -->
+    
+    <style>
+        div{
+            border:2px solid crimson;
+        }
+
+        /* space or descendant combinator */
+        /* div p{
+            background-color: yellow;
+        } */
+
+        /* applying style to the direct child of container */
+        /* div > p{
+            background-color: yellow;
+        } */
+
+        /* targeting elements which are outside the container */
+        /* div ~ p{
+            background-color: yellow;
+        } */
+
+        /* targeting first element which is outside the container */
+        /* div + p{
+            background-color: yellow;
+        } */
+
+
+        div ~ p{
+            background-color: red;
+        }
+        
+    </style>
+</head>
+<body>
+    
+    <div>
+        <p>This is Line-#1</p>
+        <p>This is Line-#2</p>
+
+        <span>
+            <p>This is Line-#3</p>
+        </span>
+    </div>
+
+    
+    <p>This is Line-4</p>
+    <p>This is Line-5</p>
+
+
+</body>
+</html>
