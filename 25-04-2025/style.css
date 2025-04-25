@@ -1,0 +1,73 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: gray;
+    color:white;
+    height: 100vh;
+    width: 100vw;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 40px;
+    font-weight: bolder;
+    font-family: algerian;
+    letter-spacing: 8px;
+}
+
+div{
+    display: none;
+}
+
+
+/* media query */
+
+/* Mobile Screen */
+@media (min-width:0px) and (max-width:500px){
+    body{
+        background-color: crimson;
+    }
+
+    .mobile{
+        display: block;
+    }
+
+}
+
+/* Tablet Screen */
+
+@media (min-width:501px) and (max-width:768px){
+    body{
+        background-color: blueviolet;
+    }
+
+    .tablet{
+        display: block;
+    }
+}
+
+/* Laptop Screen */
+
+@media (min-width:769px) and (max-width:1200px){
+    body{
+        background-color: chocolate;
+    }
+    .laptop{
+        display: block;
+    }
+}
+
+@media (min-width:1201px){
+    body{
+        background-color: darkmagenta;
+    }
+
+    .wide{
+        display: block;
+    }
+}
