@@ -1,0 +1,41 @@
+<!-- 
+ :link
+ :active
+ :visited
+ :hover
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Class on link..</title>
+
+    <style>
+        a:link{
+            color:brown;
+
+            transition: cubic-bezier();
+        }
+  
+       
+/* Write :hover pseudo class before active pseudo class to make it work properly... */
+        a:hover{
+            background-color: black;
+        }
+
+        a:active{
+            background-color: yellowgreen;
+        }
+
+        a:visited{
+            color:red;
+        }
+    </style>
+</head>
+<body>
+    <a href="#">Click here</a>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!-- 
+ Attribute Selector
+ ---------------------
+
+ tag-name[attribute-name]{...}
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute Selector</title>
+
+    <!-- Embedded or internal CSS -->
+    
+    <style>
+        /* Attribute Selector */
+        /* p[class]{
+            background-color: brown;
+            color:white;
+        } */
+
+        /* Attribute value selector */
+        p[class="para"]{
+            background-color: blueviolet;
+            color:white;
+        }
+    </style>
+
+</head>
+<body>
+    <!-- Emmets: p.para*5{This is Para #$} -->
+    <p class="para1">This is Para #1</p>
+    <p class="para2">This is Para #2</p>
+    <p class="para">This is Para #3</p>
+    <p class="para">This is Para #4</p>
+    <p class="para">This is Para #5</p>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!-- 
+ :active &
+ :hover
+
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Active & Hover PClass</title>
+
+    <style>
+        /* flexbox to center button */
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            width: 100vw;
+        }
+
+        button{
+            padding:20px 40px;
+        }
+
+        button:active{
+            color:yellow;
+        }
+        button:hover{
+            background-color: crimson;
+            color:white;
+            border:3px solid green;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <button>Click</button>
+        
+    </div>
+</body>
+</html>

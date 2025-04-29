@@ -1,0 +1,41 @@
+<!-- 
+ =  ------------- Exact match
+ ^  ------------- Start width
+ ~  ------------- Individual Occurence
+ $  ------------- Ends with 
+ |  ------------- Start with and connect with "-" symbol.
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conditional Selection</title>
+
+    <style>
+        *{
+            background-color: black;
+            color:white;
+        }
+
+        /* Conditional selection */
+        p[class|="para"]{
+            background-color: brown;
+        }
+    </style>
+</head>
+<body>
+    <!-- p.para*9{This is Para #$} -->
+
+    <p class="para">This is Para #1</p>
+    <p class="mypara">This is Para #2</p>
+    <p class="paraMy">This is Para #3</p>
+    <p class="my-para">This is Para #4</p>
+    <p class="My para">This is Para #5</p>
+    <p class="para My">This is Para #6</p>
+    <p class="para-My">This is Para #7</p>
+
+</body>
+</html>
