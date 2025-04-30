@@ -1,0 +1,59 @@
+<!-- 
+ :checked
+ :disabled
+ :enabled
+ :focus
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+
+    <!-- Embedded CSS -->
+     <style>
+        button{
+            display: none;
+        }
+        /* using :checked Pseudo class with ~ combinator (selects all the element outside container)*/
+        .container input[type='checkbox']:checked ~ button{
+            display: block;
+        }
+
+        /* using :disabled Pseudo class */
+        textarea:disabled{
+            background-color: gray;
+            color:white;
+        }
+
+        /* using :focus Pseudo class */
+        input[type="text"]:focus{
+            border:10px solid yellow;
+            background-color: red;
+            color:white;
+        }
+
+        input[type="text"]:enabled{
+            padding:20px 40px;  /*top/bottom left/right */
+        }
+     </style>
+</head>
+<body>
+    <div class="container">
+        Name: <input type="text">
+
+        <br><br>
+        <textarea rows="7" cols="25" disabled>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum, libero. Culpa placeat quam rem aspernatur nostrum exercitationem officiis quo neque eaque nam, perferendis doloribus alias expedita ipsa quasi earum soluta voluptas iure nihil. Iste est dicta laboriosam delectus qui numquam.
+        </textarea>
+
+        <br><br>
+
+        <input type="checkbox"> Accept Terms & Condition before submit
+
+        <br><br>
+        <button>Submit</button>
+    </div>
+</body>
+</html>

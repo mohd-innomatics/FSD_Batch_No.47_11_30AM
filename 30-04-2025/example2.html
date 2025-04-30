@@ -1,0 +1,91 @@
+<!-- 
+ :target
+ :hover
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mini Task on :target Pseudo class</title>
+
+    <!-- Embedded CSS -->
+
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        gap: 20px;
+
+        flex-direction: column;
+      }
+      .container {
+        border: 10px solid black;
+        height: 50vh;
+        width: 50vw;
+
+        overflow: hidden;
+        
+
+
+      }
+/* space or descendent combinator */
+      .container img{
+        object-fit: cover;
+        background-size: cover;
+        background-position: center;
+        display: none;
+
+        width: 100%;
+        height: 100%;
+      }
+
+      .link-container {
+        /* background-color: yellow; */
+      }
+
+      a {
+        margin: 10px;
+
+        /* Can't apply top & bottom margin */
+        /* margin-top: 20px;
+        margin-bottom: 20px; */
+
+        padding: 15px;
+      }
+
+      /* using :target pseudo class */
+      .container img:target{
+        display: block;
+      }
+
+
+
+      /* --------------------------------------- */
+    </style>
+  </head>
+  <body>
+    <!-- Container for displaying images -->
+    <div class="container">
+      <img
+        src="https://i.pinimg.com/736x/f5/fa/98/f5fa980c7dec129eda08274403016a53.jpg"
+   
+        id="img1"
+      />
+      <img src="http://picsum.photos/300/300" id="img2" />
+      <img src="http://picsum.photos/300/300?grayscale" id="img3"/>
+      <img src="http://picsum.photos/400/400?blur" id="img4" />
+    </div>
+
+    <!-- Container to display links -->
+    <div class="link-container">
+      <a href="#img1">Image-1</a>
+      <a href="#img2">Image-2</a>
+      <a href="#img3">Image-3</a>
+      <a href="#img4">Image-4</a>
+    </div>
+  </body>
+</html>

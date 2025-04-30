@@ -1,0 +1,81 @@
+<!-- 
+ ::first-letter
+ ::first-line
+ ::after
+ ::before
+ ::placeholder
+ ::marker
+ ::selection
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Elements</title>
+
+    <!-- Embedded CSS -->
+    <style>
+        *{
+            background-color:black;
+            color:white;
+        }
+        h1::first-letter{
+            background-color: green;
+            padding: 10px;
+            font-size: 35px;
+            text-decoration: underline;
+        }
+
+        h2::first-line{
+            background-color: brown;
+        }
+        li::after{
+            content: '🎊';
+            font-size: 30px;
+    
+        }
+        li::before{
+            content: '🎂';
+            font-size: 40px;
+        }
+
+        /* using pseudo class and pseudo element */
+        li:hover::marker{
+            content: '👉';
+            color:red;
+            font-size: 50px;
+        }
+
+        body::selection{
+            background-color: white;
+            color:red;
+        }
+
+        input::placeholder{
+            color:red;
+            background-color: yellow;
+
+        }
+    </style>
+</head>
+<body>
+    <!--  ::first-letter -->
+    
+    <h1>Hello World!, Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, rem.</h1>
+
+    <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam delectus alias quo consequatur iste voluptate itaque voluptates neque nemo temporibus soluta quaerat cum quis, molestiae qui. Veniam perferendis iusto itaque.</h2>
+
+    <ul>
+        <li>Happy Birthday Prem</li>
+        <li>Happy Birthday Prem</li>
+        <li>Happy Birthday Prem</li>
+        <li>Happy Birthday Prem</li>
+    </ul>
+
+
+    Name: <input type="text" placeholder="username">
+</body>
+</html>

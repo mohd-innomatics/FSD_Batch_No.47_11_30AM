@@ -1,0 +1,39 @@
+<!-- 
+ :first-child
+ :last-child
+ :nth-child
+ :nth-last-child
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pseudo Classes</title>
+    <!-- Embedded stylesheet -->
+    <style>
+      * {
+        background-color: black;
+        color: white;
+      }
+      /* 
+        nth-chid(odd | even | an+b)
+      */
+      .container p:nth-last-child(4){
+        background-color: brown;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Happy Birthday Prem🎂</h1>
+    <div class="container">
+      <p>This is para #1</p>
+      <p>This is para #2</p>
+      <p>This is para #3</p>
+      <p>This is para #4</p>
+      <p>This is para #5</p>
+      <p>This is para #6</p>
+    </div>
+  </body>
+</html>
