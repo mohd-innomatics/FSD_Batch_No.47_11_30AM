@@ -1,0 +1,53 @@
+<!-- 
+ CSS Inheritance
+ -----------------
+ 1. inherit
+ 2. initial
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Inherit</title>
+
+    <style>
+        .parent{
+            border:5px solid rgb(132, 17, 17);
+            height: 300px;
+            width: 100vw;
+            background-color: chocolate;
+            padding: 20px;
+
+            font-size: 25px;
+            color:rgb(128, 0, 94)
+        }
+
+        p{
+            /* void parent property by initial */
+
+            /* color:initial;
+            font-size: initial; */
+
+            /* to use specific property of parent */
+
+            /* border:inherit;
+            padding: inherit; */
+
+            /* to inherit all the properties from parent */
+
+            /* all:inherit; */
+
+            /* to avoid all parent properties */
+
+            all:initial;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur libero vel minima modi, omnis illum fuga beatae tempora doloribus voluptatum dolorum excepturi ipsum error quae, officia reiciendis maiores nobis ex!</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!-- 
+ Background-image properties
+ ----------------------------
+ 1. background-image:url()
+ 2. background-repeat
+ 3. background-size
+ 4. background-position
+ 5. background-clip 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Image</title>
+    <style>
+        .container{
+            width: 400px;
+            height: 400px;
+            background-color: rgb(120, 12, 12);
+            border:10px dotted yellow;
+
+            /* background image */
+            background-image:url(https://superawesomevectors.com/wp-content/uploads/2024/04/mr-bean-free-vector-character.jpg);
+
+            /* change background image size */
+            background-size:300px;
+
+            /* don't allow bg to repeat */
+            background-repeat: no-repeat;
+
+            /* change the position of background image */
+            /* top bottom center |top left | top right | center left | bottom center etc. */
+            background-position: bottom center;
+
+
+            /* background-clip */
+
+            /* background-clip: border-box; */
+            /* background-clip: content-box; */
+
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+    </div>
+</body>
+</html>
