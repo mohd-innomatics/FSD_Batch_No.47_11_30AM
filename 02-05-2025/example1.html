@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Movement</title>
+    <style>
+        img{
+            width: 300px;
+            position: relative;
+            top:300px;
+
+            /* animation property */
+
+            animation-name: move;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+
+            /* animation-direction: alt; */
+
+            transition-property: all;
+            transition-duration: 1s;
+            transition-timing-function: ease-in-out;
+
+        }
+
+        img:hover{
+            animation-play-state: paused;
+
+            cursor: wait;
+
+            transform: scale(3) skew(-35deg);
+
+            
+        }
+
+        @keyframes move{
+            0%{
+                left:0;
+            }
+
+            50%{
+                /* transform: skew(-35deg); */
+            }
+
+            100%{
+                left:12000px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <img src="https://cdn.pixabay.com/photo/2016/04/01/12/00/automobile-1300467_1280.png" alt="">
+</body>
+</html>

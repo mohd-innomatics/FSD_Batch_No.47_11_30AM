@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Game</title>
+
+    <!-- embedded css -->
+    <style>
+        body{
+
+            height: 80vh;
+            background-image: url(https://media.istockphoto.com/id/1185199335/vector/straight-empty-road-through-the-countryside-on-city-background-green-hills-blue-sky-meadow.jpg?s=612x612&w=0&k=20&c=fCDrmZ2Jw215-gyCsD4MirJabBK77LIYEa1Dq2yt9h0=);
+            background-repeat: no-repeat;
+
+            background-size: cover;
+            background-position: center;
+        }
+
+        img{
+            width: 800px;
+            position: relative;
+            top:1200px;
+
+            animation-name: moveBike;
+            animation-duration: 4s;
+            animation-timing-function: ease-in;
+            animation-iteration-count: infinite;
+
+        }
+
+
+        @keyframes moveBike{
+            0%{
+                left:0;
+            }
+
+            50%{
+                transform: rotate(-45deg);
+            }
+
+            100%{
+                left:4000px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <img src="./bike.png" alt="">
+</body>
+</html>

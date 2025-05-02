@@ -1,0 +1,82 @@
+<!-- 
+
+Animation keyframe
+------------------------
+ @keyframes reference-name
+ {
+    from{} ----- start
+    intermediate-state {% or px}
+    to{} ------ end
+ }
+
+ Animation properties
+ -----------------------
+ animation-name
+ animation-duration
+ animation-timing-function
+ animation-dely
+ animation-iteration-count
+ animation-direction
+ animation-fill-mode
+ animation-play-state
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+
+    <!-- Embedded CSS -->
+    <style>
+        body{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box{
+            border:4px solid blueviolet;
+            width: 300px;
+            height: 300px;
+            background-color: violet;
+
+            /* animating this element */
+
+            animation-name: change;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-fill-mode: forwards;
+            animation-timing-function: ease-in-out;
+
+            animation-direction: reverse;
+
+
+        }
+
+        .box:hover{
+            animation-play-state: paused;
+        }
+
+/* creating keyframes for animation */
+        @keyframes change{
+            from{
+                border-color: red;
+            }
+            50%{
+                transform: rotate(360deg);
+            }
+            to{
+                border-radius: 20%;
+                background-color: yellow;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>
